@@ -1,15 +1,11 @@
 from django.contrib import admin
-from perpustakaan.models import Akun, Barang, Gedung, Ruang
-
+from .models import TbAkun, TbBarang, TbGedung, TbPeminjaman, TbRuang
 # Register your models here.
-class BarangAdmin(admin.ModelAdmin):
-    list_display = ['nama_barang', 'gedung_id', 'ruang_id', 'stock', 'price']
-    search_fields = ['nama_barang', 'gedung_id','ruang_id']
-    list_filter = ('gedung_id', 'ruang_id')
-    list_per_page = 2
 
+admin.site.site_header = 'inventaris ITERA'
 
-admin.site.register(Barang, BarangAdmin)
-admin.site.register(Gedung)
-admin.site.register(Ruang)
-admin.site.register(Akun)
+admin.site.register(TbRuang)
+admin.site.register(TbAkun)
+admin.site.register(TbBarang)
+admin.site.register(TbGedung)
+admin.site.register(TbPeminjaman)
