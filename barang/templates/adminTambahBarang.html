@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container-fluid" style="background-color:  #E5E5E5;">
+        <div class="row justify-content-md-center d-fixed">
+            <div class="col text-center" style="background-color: #0B1D5C; max-height: 100px; ">
+                <h3 class="m-3  text-white">SISTEM INFORMASI INVENTORY ITERA</h3>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-sm-2" style="background-color: #fff;">
+                <nav>
+                    <div class="row justify-content-md-center" style="border-bottom: #a4a6af solid 1px;">
+                        <h2 class="text-center m-5 fw-bold">ADMIN</h2>
+                    </div>
+                    
+                    <ul class="nav flex-column text-start">
+                        <li class="nav-item " style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link active" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Dashboard.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold">
+                                <img src="/static/images/Akun.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Daftar Akun
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Barang.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Daftar Barang
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Peminjaman.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Peminjaman
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" style="color: rgb(167, 161, 161); font-weight: bold;">
+                                <img src="/static/images/LOGOUT.png" alt="" style="max-height: 20px; max-width: 20px; ">  
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-sm-10">
+                <div class="row mt-5 mx-5" style="background-color: #595151; color: antiquewhite;">
+                    <h2 class="text-white text-center my-3 mx-3">Tambah Barang</h2>
+                </div>
+                <div class="row mx-5 bg-white px-4">
+                    <div class="container">
+                        <form action="#" method="post" class="row justify-content-center">
+                            <div class="col-3 my-5">
+                                    <label class="form-label">Nama Barang</label>
+                                    <input type="text" class="form-control mb-3" name="id_akun">
+
+                                    <label class="form-label">Merek</label>
+                                    <input type="text" class="form-control mb-3" name="id_akun">
+
+                                    <label class="form-label">Satuan</label>
+                                    <input type="text" class="form-control mb-3" name="id_akun">
+
+                                    <label class="form-label">In</label>
+                                    <input type="int" class="form-control mb-3" name="id_akun">
+
+                                    <label class="form-label">Price</label>
+                                    <input type="text" class="form-control mb-3" name="id_akun">
+                    
+                                    <label class="form-label">Gedung</label>
+                                    <input type="text" class="form-control mb-3" name="nama">
+                                
+                                    <label class="form-label">Ruang</label>
+                                    <input type="text" class="form-control mb-3" name="alamat">
+                                
+                                    <label class="form-label">BAST</label>
+                                    <input type="file" class="form-control mb-3" id="formFile">
+                                    
+                                    
+                                    <div class="text-start">
+                                        <button type="submit" class="btn rounded-3 " name="tambahAkun_1" value="Tambah Akun" style="background-color: #117E44; color: antiquewhite;">Submit</button>
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <footer class="row mt-2" style="background-color: #0B1D5C;">
+                    <p class="text-muted text-center m-auto p-auto">&copy; TUBES PBO - 2021</p>
+                </footer>
+
+            </div>
+
+                
+        </div>
+    </div>
+
+
+{% endblock %}

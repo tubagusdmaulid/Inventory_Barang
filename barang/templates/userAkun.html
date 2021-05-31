@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container-fluid" style="background-color:  #E5E5E5;">
+        <div class="row justify-content-md-center d-fixed">
+            <div class="col text-center" style="background-color: #0B1D5C; max-height: 100px; ">
+                <h3 class="m-3  text-white">SISTEM INFORMASI INVENTORY ITERA</h3>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-sm-2" style="background-color: #fff;">
+                <nav>
+                    <div class="row justify-content-md-center" style="border-bottom: #a4a6af solid 1px;">
+                        <h2 class="text-center m-5 fw-bold">PEGAWAI</h2>
+                    </div>
+                    
+                    <ul class="nav flex-column text-start">
+                        <li class="nav-item " style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link active" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Dashboard.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold">
+                                <img src="/static/images/Akun.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Akun
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Barang.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Barang
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Peminjaman.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Riwayat Peminjaman
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" style="color: rgb(167, 161, 161); font-weight: bold;">
+                                <img src="/static/images/LOGOUT.png" alt="" style="max-height: 20px; max-width: 20px; ">  
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-10">
+                <div class="row mt-5 mx-5" style="background-color: #0B1D5C; border-top-left-radius: 30px ; border-top-right-radius: 30px;">
+                    <h2 class="text-white my-3 mx-3">Akun</h2>
+                </div>
+                <div class="row mx-5 bg-white px-4 justify-content-center">
+                    <div class="row container justify-content-center">
+                        <div class="col-4 container align-items-center">
+                            <div class="text-start m-5">
+                                <p>ID Akun</p>
+                                <p>Nama Pegawai</p>
+                                <p>NIp/NRK</p>
+                                <p>Email</p>
+                                <p>Password</p>
+                                <p>Role</p>
+                                <p>Alamat</p>
+                                <p>Telepon</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+          
+                <footer class="row mt-2" style="background-color: #0B1D5C;">
+                    <p class="text-muted text-center m-auto p-auto">&copy; TUBES PBO - 2021</p>
+                </footer>
+            </div>
+    </div>
+
+
+{% endblock %}

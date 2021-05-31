@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container-fluid" style="background-color:  #E5E5E5;">
+        <div class="row justify-content-md-center d-fixed">
+            <div class="col text-center" style="background-color: #0B1D5C; max-height: 100px; ">
+                <h3 class="m-3  text-white">SISTEM INFORMASI INVENTORY ITERA</h3>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-sm-2" style="background-color: #fff;">
+                <nav>
+                    <div class="row justify-content-md-center" style="border-bottom: #a4a6af solid 1px;">
+                        <h2 class="text-center m-5 fw-bold">ADMIN</h2>
+                    </div>
+                    
+                    <ul class="nav flex-column text-start">
+                        <li class="nav-item " style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link active" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Dashboard.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold">
+                                <img src="/static/images/Akun.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Daftar Akun
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Barang.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Daftar Barang
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Peminjaman.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Peminjaman
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" style="color: rgb(167, 161, 161); font-weight: bold;">
+                                <img src="/static/images/LOGOUT.png" alt="" style="max-height: 20px; max-width: 20px; ">  
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col-9 col-sm-9 m-auto p-0">
+                        <div class="row container mb-2 text-center">
+                            <h4 class="mt-2">Grafik Barang IN OUT</h4>
+                            <div class="bg-dark text-center" >
+                                <img src="../../static/images/bar.png" alt="Diagram_IN_OUT" style="max-height: 400px; max-width: 700px;">
+                            </div>
+                        </div>
+                        <div class="row container justify-content-center" >
+                            <div class="col-4 col-sm-4 text-center" style="background-color: #fff;">
+                                <div class="row p-2 my-1 align-items-center">
+                                    <div class="col">
+                                        <img src="../../static/images/Barang.png" alt="Total Barang" style="max-width: 70px; max-height: 70px;">
+                                    </div>
+                                    <div class="col">
+                                        <h2 class="m-0 text-start">3210</h2>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col my-1">
+                                        <h5>Total Inventory</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-4 text-center" style="background-color: #fff;">
+                                <div class="row p-2 my-1 align-items-center">
+                                    <div class="col">
+                                        <img src="../../static/images/IN.png" alt="In Barang" style="max-width: 70px; max-height: 70px;">
+                                    </div>
+                                    <div class="col">
+                                        <h2 class="m-0 text-start">3210</h2>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col my-1">
+                                        <h5>Total In</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-4 text-center" style="background-color: #fff;">
+                                <div class="row p-2 my-1 align-items-center">
+                                    <div class="col">
+                                        <img src="../../static/images/OUT.png" alt="Out Barang" style="max-width: 70px; max-height: 70px;">
+                                    </div>
+                                    <div class="col">
+                                        <h2 class="m-0 text-start">3210</h2>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col my-1">
+                                        <h5>Total Out</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-sm-3 text-center m-auto p-0">
+                        <div class="row m-1">
+                            <div class="col p-4" style="background-color: #fff;">
+                                <img class="m-4" src="../../static/images/price.png" alt="Total Barang" style="max-width: 100px; max-height: 100px;">
+                                    <div class="m-2">
+                                        <h4>3210</h4>
+                                    </div>
+                                    <h5>Price Barang</h5>
+                            </div>
+                        </div>
+                        <div class="row m-1">
+                            <div class="col p-5" style="background-color: #fff;">
+                                <img class="m-4" src="../../static/images/price.png" alt="Total Barang" style="max-width: 100px; max-height: 100px;">
+                                    <div class="m-2">
+                                        <h4>3210</h4>
+                                    </div>
+                                    <h5>Total Price</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="row mt-2" style="background-color: #0B1D5C;">
+                    <p class="text-muted text-center m-auto p-auto">&copy; TUBES PBO - 2021</p>
+                </div>
+            </div>
+    </div>
+
+
+{% endblock %}

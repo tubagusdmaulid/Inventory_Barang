@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <H2>DAFTAR PENERBIT</H2>
+
+    <p><b>Ini adalah subtitusi variable</b></p>
+    {{ title }} 
+
+    
+    <p><b>Ini adalah filter</b></p>
+    {{ title | upper }} 
+
+    <p><b>Ini adalah tags</b></p>
+    {% for penulis in penulis %}
+        <li>{{ penulis }}</li>
+    {% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container-fluid" style="background-color:  #E5E5E5;">
+        <div class="row justify-content-md-center d-fixed">
+            <div class="col text-center" style="background-color: #0B1D5C; max-height: 100px; ">
+                <h3 class="m-3  text-white">SISTEM INFORMASI INVENTORY ITERA</h3>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-sm-2" style="background-color: #fff;">
+                <nav>
+                    <div class="row justify-content-md-center" style="border-bottom: #a4a6af solid 1px;">
+                        <h2 class="text-center m-5 fw-bold">ADMIN</h2>
+                    </div>
+                    
+                    <ul class="nav flex-column text-start">
+                        <li class="nav-item " style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link active" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Dashboard.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold">
+                                <img src="/static/images/Akun.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Daftar Akun
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Barang.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Daftar Barang
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" style="color: black; font-weight: bold;">
+                                <img src="/static/images/Peminjaman.png" alt="" style="max-height: 20px; max-width: 20px;">  
+                                Peminjaman
+                            </a>
+                        </li>
+                        <li class="nav-item" style="border-bottom: #a4a6af solid 1px;">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" style="color: rgb(167, 161, 161); font-weight: bold;">
+                                <img src="/static/images/LOGOUT.png" alt="" style="max-height: 20px; max-width: 20px; ">  
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-sm-10">
+                <div class="row mt-5 mx-5" style="background-color: #0B1D5C; border-top-left-radius: 30px ; border-top-right-radius: 30px;">
+                        <h2 class="text-white my-3 mx-3">Data Akun</h2>
+                </div>
+                <div class="row mx-5" >
+                    <div class="col bg-white">
+                        <button class="my-3 mx-3 text-white rounded-3 px-3" style="background-color: #0B1D5C; ">Tambah Akun</button>
+                    </div>
+                </div>
+                <div class="row mx-5 bg-white px-4">
+                    <table class="table" style="border: #595151 solid 1px;">
+                        <thead style="background-color: #595151; color: antiquewhite;">
+                            <tr class="col text-center align-item-center"> 
+                            <th scope="col">ID</th>
+                            <th scope="col">EMAIL</th>
+                            <th scope="col">PASSWORD</th>
+                            <th scope="col">ROLE</th>
+                            <th scope="col">NAMA</th>
+                            <th scope="col">NIP/NRK</th>
+                            <th scope="col">ALAMAT</th>
+                            <th scope="col">TELP</th>
+                            <th scope="col"></th>
+                            </tr>
+                        </thead>
+            
+                        <tbody style="height: fit-content; width: fit-content; font-size: 14px;">
+                                <td><div class="align-center">12345678</div></td>
+                                <td><div class="align-center">DASDA@gmail.com</div></td>
+                                <td><div class="align-center">wqwqe12312</div></td>
+                                <td><div class="align-center">PEGAWAI</div></td>
+                                <td><div class="align-center">Tubagus Dinda maulid</div></td>
+                                <td><div class="align-center">12132321/3213123</div></td>
+                                <td><div class="align-center">dsad dasdaskdasds adsadasdsadjasdasi</div></td>
+                                <td><div class="align-center">082132131231</div></td>
+                                <td><div class="align-center">
+                                                <a href="#" class="text-decoration-none d-grid mb-1">
+                                            <button class="btn rounded-3" style="background-color: #117E44; color: antiquewhite;">Edit</button></a>
+                                                <a href="#" class="text-decoration-none d-grid">
+                                            <button class="btn rounded-3" style="background-color: #FF2C0F; color: antiquewhite;">Delete</button></a>
+                                </div></td>
+                        </tbody>
+                    </table>
+                
+                    <div class="container text-end my-3">
+                        <a href="#"><button class="btn-warning rounded-3">Data Admin</button></a>
+                        <a href="#"><button class="btn-warning rounded-3">Data Karyawan</button></a>
+                        <a href="#"><button class="btn-warning rounded-3">Cetak data</button></a>
+                        <a href="#"><button class="btn-warning rounded-3">Lihat Diagram</button></a>
+                    </div>
+                </div>
+
+                <footer class="row mt-2" style="background-color: #0B1D5C;">
+                    <p class="text-muted text-center m-auto p-auto">&copy; TUBES PBO - 2021</p>
+                </footer>
+
+            </div>
+
+                
+        </div>
+    </div>
+
+
+{% endblock %}
